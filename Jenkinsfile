@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
+                sh 'cd the-example-app.nodejs'
                 sh 'npm --version'
             }
         }
